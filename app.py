@@ -4,10 +4,11 @@ import pickle
 from tensorflow.keras.models import load_model
 
 # Load model + encoders
-model = load_model("artifacts/model.h5")
-scaler = pickle.load(open("artifacts/scaler.pkl", "rb"))
-label_encoder = pickle.load(open("artifacts/label_encoder.pkl", "rb"))
-onehot = pickle.load(open("artifacts/onehot_encoder.pkl", "rb"))
+model = load_model("models/best_model.h5")
+
+scaler = pickle.load(open("models/scaler.pkl", "rb"))
+label_encoder = pickle.load(open("models/label_encoder.pkl", "rb"))
+onehot = pickle.load(open("models/onehot_encoder.pkl", "rb"))
 
 st.title("Customer Churn Prediction App")
 

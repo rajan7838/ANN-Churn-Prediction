@@ -1,10 +1,9 @@
 venv/
 __pycache__/
-artifacts/
-*.pkl
-*.h5
-*.keras
-*.csv
-.git
+*.pyc
+
+.git/
 .gitignore
-README.md
+
+notebooks/
+logs/
